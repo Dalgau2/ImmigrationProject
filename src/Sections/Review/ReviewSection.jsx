@@ -1,6 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import "../Review/reviewSection.css";
 import SwiperOfReviewSection from "../../Components/Swiper/ReviewSwiper/OurReviewSwiper";
+import MyRating from "../../Components/Rating/Rating";
+import SearchBarForImmigration from "../../Components/ReusebleSearchBar/searchBar";
 const OurReviewsSection = () => {
   return (
     <Box className="ourReviews">
@@ -9,6 +11,17 @@ const OurReviewsSection = () => {
       </Box>
       <Box sx={{marginTop:"110px"}}>
        <SwiperOfReviewSection/>
+      </Box>
+      <Box sx={{height:"335px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}> 
+      <Box sx={{display:"flex",alignItems:"center"}}>
+       <Box>
+        <Typography sx={{fontSize:"30px",color:"white",fontWeight:"700"}}>Rating:</Typography>
+       </Box>
+       <Box><MyRating/></Box>
+      </Box>
+      <Box >
+        <SearchBarForImmigration/>
+       </Box>
       </Box>
     </Box>
   );

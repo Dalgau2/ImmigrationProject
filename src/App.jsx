@@ -7,7 +7,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LayoutOfImmigration />}>
-          {/* hello chk gor commit */}
           <Route index element={<HomePageForImmigration/>} />
         </Route>
       </Routes>
