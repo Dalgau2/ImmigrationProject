@@ -1,44 +1,112 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Box } from "@mui/material";
+import { Avatar, Box, Card, CardContent, Typography,Paper } from "@mui/material";
+import { BiSolidQuoteAltRight } from "react-icons/bi";
 import data from "../../../Components/ImmigrationNav/NavOption.json";
+import "../../Swiper/ReviewSwiper/reviewStyle.css";
 import {
   EffectCoverflow,
   Pagination,
   Autoplay,
   Navigation,
 } from "swiper/modules";
+import { delay, disableInstantTransitions } from "framer-motion";
+import { RateReview } from "@mui/icons-material";
+import MyRating from "../../Rating/Rating";
 const SwiperOfReviewSection = () => {
   return (
     <Box>
-      <Swiper  style={{height:"310px",border:"2px solid white"}}
-       autoplay={{
-          delay:1000,
-          disableOnInteraction:false
-       }}
-      spaceBetween={10}
-       grabCursor={true}
-       modules={[EffectCoverflow, Pagination,Autoplay]}
-      //  initialSlide={Math.floor(data.length / 1)} // 
-       loop={true}
+      <Swiper
+        // centeredSlides={true}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
+        grabCursor={true}
+        slidesPerView={5}
+        spaceBetween={30}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        modules={[Pagination, Autoplay]}
+        loop={true}
+        className="myReviewSwiper"
       >
-        <SwiperSlide style={{color:"white",maxWidth:"260px", border:"2px solid white",height:"310px",borderRadius:"10px"}}>
-        hello
-        </SwiperSlide>
-        <SwiperSlide style={{color:"white",maxWidth:"260px", border:"2px solid white",height:"310px",borderRadius:"10px"}}>
-        hello
-        </SwiperSlide>
-        <SwiperSlide style={{color:"white",maxWidth:"260px", border:"2px solid white",height:"310px",borderRadius:"10px"}}>
-        hello
-        </SwiperSlide>
-        <SwiperSlide style={{color:"white",maxWidth:"260px", border:"2px solid white",height:"310px",borderRadius:"10px"}}>
-        hello
-        </SwiperSlide>
-        <SwiperSlide style={{color:"white",maxWidth:"260px", border:"2px solid white",height:"310px",borderRadius:"10px"}}>
-        hello
-        </SwiperSlide>
+        {data.map((d) => {
+          return (
+            <>
+              <SwiperSlide className="mySwiperSlideOfReview">
+                {d.id}
+              </SwiperSlide>
+              <SwiperSlide className="mySwiperSlideOfReview">
+                <Card
+                  sx={{ width: "100%", height: "100%", borderRadius: "16px" ,display:"flex",flexDirection:"column",justifyContent:"space-evenly"}}
+                >
+                  <Box p={1} m={2}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Box>
+                        <BiSolidQuoteAltRight style={{ fontSize: "40px",color:"#FDD300" }} />
+                      </Box>
+                      <CardContent
+                        sx={{
+                          display:"flex",
+                          // padding: "15px",
+                          height: "150px",
+                          // overflow: "hidden",
+                          alignItems:"center"
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontFamily: "juana",
+                            fontWeight: "400",
+                            fontSize: "22px",
+                            color: "black",
+                            textAlign: "center",
+                          }}
+                        >
+                          This impressive
+                         
+                        </Typography>
+                      </CardContent>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "end",
+                        }}
+                      >
+                        <Box>
+                          <BiSolidQuoteAltRight style={{ fontSize: "40px",color:"#FDD300" }} />
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box >
+                  <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-evenly"}}>
+                  <Avatar sx={{width:"50px",height:"50px"}}>
+                    helo
+                   </Avatar>
+                   <Typography  sx={{color:"grey",fontSize:"25px"}}>- Gautam</Typography>
+                  </Box>
+                   
+                   <Box>
+                   </Box>
+                  <Box sx={{display:"flex",justifyContent:"center",height:"50px",alignItems:"center"}}>
+                   <MyRating size={35}/>
+                  </Box>
+                  </Box>
+                </Card>
+              </SwiperSlide>
+            </>
+          );
+        })}
       </Swiper>
     </Box>
-  )
+  );
 };
 export default SwiperOfReviewSection;

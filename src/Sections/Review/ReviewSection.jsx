@@ -6,22 +6,61 @@ import SearchBarForImmigration from "../../Components/ReusebleSearchBar/searchBa
 const OurReviewsSection = () => {
   return (
     <Box className="ourReviews">
-      <Box sx={{textAlign:"center",position:"relative",height:"200px",display:"flex",justifyContent:"center",alignItems:"center"}}>
-        <Typography sx={{position:"absolute",top:"50%",color:"white",fontSize:"80px",fontFamily:"Alayna",fontWeight:"700",borderBottom:"10px solid rgb(254, 201, 22);",height:"95px"}}>Review & Testimonial</Typography>
+      <Box
+        sx={{
+          textAlign: "center",
+          position: "relative",
+          height: "200px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography
+          sx={{
+            position: "absolute",
+            top: "50%",
+            color: "white",
+            fontSize: "80px",
+            fontFamily: "Alayna",
+            fontWeight: "700",
+            borderBottom: "10px solid rgb(254, 201, 22);",
+            height: "95px",
+          }}
+        >
+          Review & Testimonial
+        </Typography>
       </Box>
-      <Box sx={{marginTop:"110px"}}>
-       <SwiperOfReviewSection/>
+      <Box sx={{ marginTop: "110px" }}>
+        <SwiperOfReviewSection />
       </Box>
-      <Box sx={{height:"335px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}> 
-      <Box sx={{display:"flex",alignItems:"center"}}>
-       <Box>
-        <Typography sx={{fontSize:"30px",color:"white",fontWeight:"700"}}>Rating:</Typography>
-       </Box>
-       <Box><MyRating/></Box>
-      </Box>
-      <Box >
-        <SearchBarForImmigration/>
-       </Box>
+      <Box
+        sx={{
+          height: "335px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box>
+            <Typography
+              sx={{ fontSize: "30px", color: "white", fontWeight: "700" }}
+            >
+              Rating:
+            </Typography>
+          </Box>
+          <Box>
+            <MyRating size={60} />
+          </Box>
+        </Box>
+        <Box>
+          <SearchBarForImmigration
+            buttonName={"Search"}
+            placeHolderName={"Where To Go"}
+          />
+        </Box>
       </Box>
     </Box>
   );

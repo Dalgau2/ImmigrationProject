@@ -7,6 +7,7 @@ import OurAchievements from "../../Sections/Achievment/OurAchievmentSection";
 import OurSuccessSection from "../../Sections/Success/SuccessSection";
 import OurReviewsSection from "../../Sections/Review/ReviewSection";
 import PartnerBrand from "../../Sections/PartnerShip/PartnerShipSection";
+import FooterOfImmigration from "../../Sections/Footer/FooterSection";
 const HomePageForImmigration = () => {
   return (
     <Box className="immigrationContainer">
@@ -49,8 +50,9 @@ const HomePageForImmigration = () => {
       <OurReviewsSection/>
     </Box>
     {/* ParnerSection */}
+   {/* Footer of Immigration */}
    <Box>
-    <PartnerBrand/>
+    <FooterOfImmigration/>
    </Box>
     </Box>
   );

@@ -15,6 +15,7 @@ const SearchBarForImmigration=({buttonName,placeHolderName})=>{
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "101",
+          zIndex:"100"
         }}
       >
         <input
