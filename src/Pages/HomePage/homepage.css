@@ -5,7 +5,7 @@
 .heroSection {
   display: flex;
   flex-direction: column;
-  height: 900px;
+  height: 950px;
   background: linear-gradient(
         rgba(255, 255, 255, 0.9) 0%,
         rgba(255, 255, 255, 0.592) 100%
@@ -15,6 +15,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 .headerSection {
   width: 100%;
@@ -38,11 +39,14 @@
   justify-content: center;
   align-items: last baseline;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   margin-bottom: 30px;
 }
 
 .swiperSection {
-  /* border: 2px solid rgb(12, 12, 12); */
+  /* border: 2px solid rgb(15, 15, 15); */
   height: 550px;
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
 }

@@ -1,6 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Avatar, Box, Card, CardContent, Typography,Paper } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Paper,
+} from "@mui/material";
 import { BiSolidQuoteAltRight } from "react-icons/bi";
 import data from "../../../Components/ImmigrationNav/NavOption.json";
 import "../../Swiper/ReviewSwiper/reviewStyle.css";
@@ -18,10 +25,10 @@ const SwiperOfReviewSection = () => {
     <Box>
       <Swiper
         // centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         grabCursor={true}
         slidesPerView={5}
         spaceBetween={30}
@@ -40,7 +47,14 @@ const SwiperOfReviewSection = () => {
               </SwiperSlide>
               <SwiperSlide className="mySwiperSlideOfReview">
                 <Card
-                  sx={{ width: "100%", height: "100%", borderRadius: "16px" ,display:"flex",flexDirection:"column",justifyContent:"space-evenly"}}
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: "16px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-evenly",
+                  }}
                 >
                   <Box p={1} m={2}>
                     <Box
@@ -50,15 +64,17 @@ const SwiperOfReviewSection = () => {
                       }}
                     >
                       <Box>
-                        <BiSolidQuoteAltRight style={{ fontSize: "40px",color:"#FDD300" }} />
+                        <BiSolidQuoteAltRight
+                          style={{ fontSize: "40px", color: "#FDD300" }}
+                        />
                       </Box>
                       <CardContent
                         sx={{
-                          display:"flex",
+                          display: "flex",
                           // padding: "15px",
                           height: "150px",
                           // overflow: "hidden",
-                          alignItems:"center"
+                          alignItems: "center",
                         }}
                       >
                         <Typography
@@ -71,7 +87,6 @@ const SwiperOfReviewSection = () => {
                           }}
                         >
                           This impressive
-                         
                         </Typography>
                       </CardContent>
                       <Box
@@ -81,24 +96,40 @@ const SwiperOfReviewSection = () => {
                         }}
                       >
                         <Box>
-                          <BiSolidQuoteAltRight style={{ fontSize: "40px",color:"#FDD300" }} />
+                          <BiSolidQuoteAltRight
+                            style={{ fontSize: "40px", color: "#FDD300" }}
+                          />
                         </Box>
                       </Box>
                     </Box>
                   </Box>
-                  <Box >
-                  <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-evenly"}}>
-                  <Avatar sx={{width:"50px",height:"50px"}}>
-                    helo
-                   </Avatar>
-                   <Typography  sx={{color:"grey",fontSize:"25px"}}>- Gautam</Typography>
-                  </Box>
-                   
-                   <Box>
-                   </Box>
-                  <Box sx={{display:"flex",justifyContent:"center",height:"50px",alignItems:"center"}}>
-                   <MyRating size={35}/>
-                  </Box>
+                  <Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-evenly",
+                      }}
+                    >
+                      <Avatar sx={{ width: "50px", height: "50px" }}>
+                        helo
+                      </Avatar>
+                      <Typography sx={{ color: "grey", fontSize: "25px" }}>
+                        - Gautam
+                      </Typography>
+                    </Box>
+
+                    <Box></Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        height: "50px",
+                        alignItems: "center",
+                      }}
+                    >
+                      <MyRating size={35} />
+                    </Box>
                   </Box>
                 </Card>
               </SwiperSlide>

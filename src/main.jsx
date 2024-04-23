@@ -6,6 +6,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import OurSuccessSection from "./Sections/Success/SuccessSection.jsx";
 import OurReviewsSection from "./Sections/Review/ReviewSection.jsx";
 import SwiperOfReviewSection from "./Components/Swiper/ReviewSwiper/OurReviewSwiper.jsx";
+import SwiperImmigration from "./Components/Swiper/swiperForImmigration.jsx";
+import SwiperCardForImmigration from "./Components/CardComponent/CardForSwiper.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -23,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App/>
-    {/* <OurReviewsSection/> */}
+     {/* <SwiperImmigration/> */}
     </ThemeProvider>
   </React.StrictMode>
 );
