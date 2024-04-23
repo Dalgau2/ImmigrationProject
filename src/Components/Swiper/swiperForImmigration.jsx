@@ -20,10 +20,10 @@ const SwiperImmigration = () => {
     >
       <Swiper
         effect={"coverflow"}
-        //  autoplay={{
-        //    delay: 2500,
-        //    disableOnInteraction: false,
-        //  }}
+         autoplay={{
+           delay: 2500,
+           disableOnInteraction: false,
+         }}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
@@ -40,10 +40,34 @@ const SwiperImmigration = () => {
         className="mySwiperForImmigration"
       >
         <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">2</SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">3</SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">4</SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">5</SwiperSlide>
+        <SwiperSlide className="mySwiperslideForImmigration"><SwiperCardForImmigration/></SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">6</SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">7</SwiperSlide>
         <SwiperSlide className="mySwiperslideForImmigration">8</SwiperSlide>
