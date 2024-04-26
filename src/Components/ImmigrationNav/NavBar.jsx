@@ -13,6 +13,8 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import logo from "../../assets/Images/Plane.webp";
 import data from "./NavOption.json";
 import { Paper } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./styleForNavBar.css"
 
 function NavigationBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -127,10 +129,10 @@ function NavigationBar() {
                 width: "70%",
               }}
             >
-              <Box sx={{ display: "flex", justifyContent: "space-evenly",width: "75%", }}>
+              <Box sx={{ display: "flex", justifyContent: "space-evenly",width: "75%",}}>
                 {data.map((nav) => (
-                  <a
-                    // href={`${nav.href}`}
+                  <Link
+                    to={`${nav.href}`}
                     key={nav.id}
                     onClick={handleCloseNavMenu}
                     style={{
@@ -138,10 +140,13 @@ function NavigationBar() {
                       color: "black",
                       display: "block",
                       textDecoration: "none",
+                      zIndex:999
                     }}
+                    className="navBarLink"
                   >
                     {nav.navlink}
-                  </a>
+
+                  </Link>
                 ))}
               </Box>
             </Box>

@@ -1,6 +1,7 @@
 import { Box } from "@mui/material"
 import NavigationBar from "../ImmigrationNav/NavBar"
 import { Outlet } from "react-router"
+import FooterOfImmigration from "../../Sections/Footer/FooterSection"
 const LayoutOfImmigration=()=>{
     return(
         <Box className="Container">
@@ -11,7 +12,7 @@ const LayoutOfImmigration=()=>{
             <Outlet/>
           </Box>
           <Box className="footer">
-        
+            <FooterOfImmigration/>
           </Box>
         </Box>
     )

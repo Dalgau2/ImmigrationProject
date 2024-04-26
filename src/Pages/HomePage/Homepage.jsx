@@ -51,9 +51,9 @@ const HomePageForImmigration = () => {
       </Box>
       {/* ParnerSection */}
       {/* Footer of Immigration */}
-      <Box>
+      {/* <Box>
         <FooterOfImmigration />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

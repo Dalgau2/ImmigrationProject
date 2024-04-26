@@ -8,6 +8,7 @@ import OurReviewsSection from "./Sections/Review/ReviewSection.jsx";
 import SwiperOfReviewSection from "./Components/Swiper/ReviewSwiper/OurReviewSwiper.jsx";
 import SwiperImmigration from "./Components/Swiper/swiperForImmigration.jsx";
 import SwiperCardForImmigration from "./Components/CardComponent/CardForSwiper.jsx";
+import PackagePageOfImmigration from "./Pages/Package/Packages.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -18,13 +19,13 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins,juana,cential",
-    color: "black",
+    color: "black", 
   },
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-     <App/>
+   <App/>
     </ThemeProvider>
   </React.StrictMode>
 );

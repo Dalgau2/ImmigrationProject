@@ -20,6 +20,7 @@ const SwiperImmigration = () => {
     >
       <Swiper
         effect={"coverflow"}
+        // spaceBetween={5}
          autoplay={{
            delay: 2500,
            disableOnInteraction: false,
