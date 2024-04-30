@@ -7,24 +7,24 @@ const PartnerBrand = () => {
   return (
     <Box
       sx={{
-        height: "200px",
+        minHeight: "200px",
         display: "flex",
         alignItems: "center",
         backgroundColor: "black",
         justifyContent: "center",
-        padding: "130px",
       }}
     >
       <Box
         border={1}
         sx={{
-          height: "200px",
           width: "210px",
+          height: "160px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           borderRight: "1px solid grey",
           marginRight: "10px",
+          
         }}
         className="PartnerBrans"
       >
@@ -45,6 +45,7 @@ const PartnerBrand = () => {
           height: "100px",
           alignItems: "center",
           gap: "40px",
+         
         }}
       >
         <Box>

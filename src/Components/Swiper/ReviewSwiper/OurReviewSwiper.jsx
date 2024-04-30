@@ -17,8 +17,6 @@ import {
   Autoplay,
   Navigation,
 } from "swiper/modules";
-import { delay, disaleInstantTransitions } from "framer-motion";
-import { RateReview } from "@muib/icons-material";
 import MyRating from "../../Rating/Rating";
 const SwiperOfReviewSection = () => {
   return (

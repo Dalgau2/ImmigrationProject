@@ -33,6 +33,7 @@ const ExploarDestination = () => {
                 justifyContent: "space-evenly",
                 alignItems: "center",
                 boxShadow: "101",
+                
               }}
             >
               <Button
@@ -98,10 +99,12 @@ const ExploarDestination = () => {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "repeat(4,1fr)",
           justifyItems: "center",
           gap: "10px",
           padding: "30px",
+          gridTemplateColumns: "repeat(5,1fr)",
+          gridTemplateColumns:{lg:"repeat(5,1fr)",md:"repeat(4,1fr)",sm:"repeat(2,1fr)",sx:"repeat(1,fr)"}
+          
         }}
       >
         {data.map((d) => {

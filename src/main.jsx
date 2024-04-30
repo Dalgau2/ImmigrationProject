@@ -7,6 +7,9 @@ import ImmigrationBreadCrumb from "./Components/BreadCrumb/ImmigrationBreadCrumb
 import NavigationBar from "./Components/ImmigrationNav/NavBar.jsx";
 import HomePageForImmigration from "./Pages/HomePage/Homepage.jsx";
 import SearchBarForImmigration from "./Components/ReusebleSearchBar/searchBar.jsx";
+import FooterOfImmigration from "./Sections/Footer/FooterSection.jsx";
+import PartnerBrand from "./Sections/PartnerShip/PartnerShipSection.jsx";
+import ExploarDestination from "./Sections/DstnSection/Destination.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -23,8 +26,7 @@ export const theme = createTheme({
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    {/* <HomePageForImmigration/> */}
-    <App/>
+   <App/>
     </ThemeProvider>
   </React.StrictMode>
 );

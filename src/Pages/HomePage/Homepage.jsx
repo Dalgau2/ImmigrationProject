@@ -49,9 +49,9 @@ const HomePageForImmigration = () => {
       <Box>
         <OurReviewsSection />
       </Box>
-      <Box>
+      {/* <Box>
         <FooterOfImmigration />
-      </Box>
+      </Box> */}
     </Box>
   );
 };
