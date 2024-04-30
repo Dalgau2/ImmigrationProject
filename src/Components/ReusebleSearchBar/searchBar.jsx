@@ -1,10 +1,9 @@
-import { Box,Button,Paper } from "@mui/material"
-import "../../Pages/HomePage/homepage.css"
-const SearchBarForImmigration=({buttonName,placeHolderName})=>{
-   
-    return(
-      <Box className="searchBarOfHearderSection">
-          <Box
+import { Box, Button, Paper } from "@mui/material";
+import "../../Pages/HomePage/homepage.css";
+const SearchBarForImmigration = ({ buttonName, placeHolderName }) => {
+  return (
+    <Box className="searchBarOfHearderSection">
+      <Box
         component={Paper}
         elevation={4}
         sx={{
@@ -15,7 +14,7 @@ const SearchBarForImmigration=({buttonName,placeHolderName})=>{
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "101",
-          zIndex:"100"
+          zIndex: "100",
         }}
       >
         <input
@@ -41,10 +40,10 @@ const SearchBarForImmigration=({buttonName,placeHolderName})=>{
             textTransform: "inherit",
           }}
         >
-         {buttonName}
+          {buttonName}
         </Button>
       </Box>
-      </Box>
-    )
-}
-export default SearchBarForImmigration
+    </Box>
+  );
+};
+export default SearchBarForImmigration;

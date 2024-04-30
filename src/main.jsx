@@ -3,12 +3,10 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
-import OurSuccessSection from "./Sections/Success/SuccessSection.jsx";
-import OurReviewsSection from "./Sections/Review/ReviewSection.jsx";
-import SwiperOfReviewSection from "./Components/Swiper/ReviewSwiper/OurReviewSwiper.jsx";
-import SwiperImmigration from "./Components/Swiper/swiperForImmigration.jsx";
-import SwiperCardForImmigration from "./Components/CardComponent/CardForSwiper.jsx";
-import PackagePageOfImmigration from "./Pages/Package/Packages.jsx";
+import ImmigrationBreadCrumb from "./Components/BreadCrumb/ImmigrationBreadCrumb.jsx";
+import NavigationBar from "./Components/ImmigrationNav/NavBar.jsx";
+import HomePageForImmigration from "./Pages/HomePage/Homepage.jsx";
+import SearchBarForImmigration from "./Components/ReusebleSearchBar/searchBar.jsx";
 export const theme = createTheme({
   palette: {
     primary: {
@@ -19,13 +17,14 @@ export const theme = createTheme({
   },
   typography: {
     fontFamily: "Poppins,juana,cential",
-    color: "black", 
+    color: "black",
   },
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-   <App/>
+    {/* <HomePageForImmigration/> */}
+    <App/>
     </ThemeProvider>
   </React.StrictMode>
 );

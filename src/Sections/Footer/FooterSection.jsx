@@ -148,7 +148,14 @@ const FooterOfImmigration = () => {
           copyright <CopyrightIcon sx={{ fontSize: "small" }} /> 2024
           Immigration
         </Typography>
-        <Box sx={{ display: "flex", alignItems: "center",width:"670px" ,justifyContent:"space-between"}}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            width: "670px",
+            justifyContent: "space-between",
+          }}
+        >
           {" "}
           Developed and maintained by
           <Typography

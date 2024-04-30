@@ -3,14 +3,17 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import EmojiPeopleOutlinedIcon from "@mui/icons-material/EmojiPeopleOutlined";
-import AirplaneTicketOutlinedIcon from '@mui/icons-material/AirplaneTicketOutlined';
-import PortraitOutlinedIcon from '@mui/icons-material/PortraitOutlined';
+import AirplaneTicketOutlinedIcon from "@mui/icons-material/AirplaneTicketOutlined";
+import PortraitOutlinedIcon from "@mui/icons-material/PortraitOutlined";
 import "../Package/styleOfPackage.css";
 import pic from "../../assets/Images/packageback.a9ad0eb3 (1).jpeg";
+import ImmigrationBreadCrumb from "../../Components/BreadCrumb/ImmigrationBreadCrumb";
 const PackagePageOfImmigration = () => {
   return (
     <Box className="PackageSection">
-      <Box className="breadCrumpOfPackage">HELLO</Box>
+      <Box className="breadCrumpOfPackage">
+        <ImmigrationBreadCrumb />
+      </Box>
       <Box className="containerOfPackage">
         <Box className="containerOfPackageDetail">
           <Box>
@@ -198,13 +201,16 @@ const PackagePageOfImmigration = () => {
               borderRadius: "10px",
               background: "#F9C018",
               marginTop: "10px",
-              display:"flex",
-              alignItems:"center",
-              padding:"20px"
-              
+              display: "flex",
+              alignItems: "center",
+              padding: "20px",
             }}
           >
-            <Typography  sx={{width:"100%",fontWeight:"700",fontSize:"25px"}}>Documents Required</Typography>
+            <Typography
+              sx={{ width: "100%", fontWeight: "700", fontSize: "25px" }}
+            >
+              Documents Required
+            </Typography>
           </Box>
           <Box sx={{ display: "flex", marginTop: "10px" }}>
             <Box
@@ -215,17 +221,19 @@ const PackagePageOfImmigration = () => {
                 marginRight: "10px",
                 height: "200px",
                 borderRadius: "20px",
-                display:"flex",
-                justifyContent:"center",
-                alignItems:"center",
-                flexDirection:"column",
-                color:"white"
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                color: "white",
               }}
             >
-             <Typography>Passport</Typography>
-             <Box>
-              <AirplaneTicketOutlinedIcon sx={{fontSize:"100px",color:"#F9C018"}}/>
-             </Box>
+              <Typography>Passport</Typography>
+              <Box>
+                <AirplaneTicketOutlinedIcon
+                  sx={{ fontSize: "100px", color: "#F9C018" }}
+                />
+              </Box>
             </Box>
             <Box
               component={Paper}
@@ -235,17 +243,19 @@ const PackagePageOfImmigration = () => {
                 marginRight: "10px",
                 height: "200px",
                 borderRadius: "20px",
-                display:"flex",
-                justifyContent:"center",
-                alignItems:"center",
-                flexDirection:"column",
-                color:"white"
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                color: "white",
               }}
             >
-             <Typography>Photograph</Typography>
-             <Box>
-              <PortraitOutlinedIcon  sx={{fontSize:"100px",color:"#F9C018"}}/>
-             </Box>
+              <Typography>Photograph</Typography>
+              <Box>
+                <PortraitOutlinedIcon
+                  sx={{ fontSize: "100px", color: "#F9C018" }}
+                />
+              </Box>
             </Box>
           </Box>
         </Box>
@@ -265,7 +275,13 @@ const PackagePageOfImmigration = () => {
             >
               <Typography>hello</Typography>
             </Box>
-            <Box sx={{ height: "251px", background: "white" }}>
+            <Box
+              sx={{
+                height: "251px",
+                backdropFilter: "blur(25px) saturate(180%)",
+                backgroundColor: "rgba(255, 255, 255, 0.37)",
+              }}
+            >
               <Box
                 sx={{
                   display: "flex",

@@ -22,9 +22,10 @@
   margin-right: 8px;
   margin-left: 2px;
   /* border: 1px solid black; */
-  background-color:white;
   display: flex;
-  justify-content: center;
+  justify-content: center ;
+  background-color:white !important;
+  z-index: 999 !important;
 }
 .swiper-slide.swiper-slide-active.mySwiperslideForImmigration.swiper-slide-visible.swiper-slide-fully-visible {
   height: 300px;
@@ -33,6 +34,7 @@
   margin-right: 40px;
   margin-left: 30px;
   max-width: 250px;
+  background: white;
 }
 /* .swiper-wrapper {
   position: absolute;

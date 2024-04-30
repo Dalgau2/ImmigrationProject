@@ -1,15 +1,12 @@
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import cn from "../../assets/Images/md.webp";
-const SwiperCardForImmigration = () => {
+const SwiperCardForImmigration = ({ data }) => {
   return (
     <Box
-     
       sx={{
         padding: 0,
         maxWidth: 320,
-        position: "absolute",
-        // border: "2px solid black",
         borderRadius: "25px",
       }}
     >
@@ -51,7 +48,7 @@ const SwiperCardForImmigration = () => {
           </Box>
         </Box>
       </Card>{" "}
-      <Box>hello</Box>
+      <Box>{data}</Box>
     </Box>
   );
 };

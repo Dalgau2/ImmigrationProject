@@ -17,8 +17,8 @@ import {
   Autoplay,
   Navigation,
 } from "swiper/modules";
-import { delay, disableInstantTransitions } from "framer-motion";
-import { RateReview } from "@mui/icons-material";
+import { delay, disaleInstantTransitions } from "framer-motion";
+import { RateReview } from "@muib/icons-material";
 import MyRating from "../../Rating/Rating";
 const SwiperOfReviewSection = () => {
   return (
@@ -32,9 +32,6 @@ const SwiperOfReviewSection = () => {
         grabCursor={true}
         slidesPerView={5}
         spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        // }}
         modules={[Pagination, Autoplay]}
         loop={true}
         className="myReviewSwiper"
@@ -70,10 +67,8 @@ const SwiperOfReviewSection = () => {
                       </Box>
                       <CardContent
                         sx={{
-                          display: "flex",
-                          // padding: "15px",
-                          height: "150px",
-                          // overflow: "hidden",
+                          display: "flex",                     
+                          height: "150px",                  
                           alignItems: "center",
                         }}
                       >

@@ -7,8 +7,7 @@
     src: url(../../../public/Font/Alayna.OTF);
   }
 .DestinationContainer{
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
    background-color: rgb(254, 201, 22);;
-   min-height: 400px;
   }

@@ -30,7 +30,7 @@ const HomePageForImmigration = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="swiperSection" sx={{ marginTop: "0px",position:"relative",width:"100%" }}>
+        <Box className="swiperSection" sx={{ marginTop: "0px", width: "100%" }}>
           <SwiperImmigration />
         </Box>
       </Box>
@@ -49,11 +49,9 @@ const HomePageForImmigration = () => {
       <Box>
         <OurReviewsSection />
       </Box>
-      {/* ParnerSection */}
-      {/* Footer of Immigration */}
-      {/* <Box>
+      <Box>
         <FooterOfImmigration />
-      </Box> */}
+      </Box>
     </Box>
   );
 };
